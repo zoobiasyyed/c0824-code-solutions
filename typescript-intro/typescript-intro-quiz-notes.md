@@ -24,6 +24,8 @@ you would have to use the tsc compiler to convert the code into valid javascript
 
 It adds syntax to the code about the correct data types being used.
 
+Allows for the creation of types so that every property of an object/array has a data type associated with it
+
 ## Notes
 
 All student notes should be written here.
