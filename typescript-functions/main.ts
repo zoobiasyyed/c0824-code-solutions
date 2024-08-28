@@ -30,10 +30,10 @@ const person: Person = {
   lastName: 'Syyed',
 };
 
-const getFirstName = (Person: string): string => {
-  return Person;
+const getFirstName = (person: Person): string => {
+  return person.firstName;
 };
-console.log('get first name: ', getFirstName(person.firstName));
+console.log('get first name: ', getFirstName(person));
 
 // getLastElement
 
