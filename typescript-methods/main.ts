@@ -31,7 +31,7 @@ const css = {
 
 library.push(js);
 library.unshift(css);
-library.splice(1);
+library.splice(1, 1);
 console.log(library);
 
 // string methods
