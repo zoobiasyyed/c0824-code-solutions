@@ -10,15 +10,15 @@ they create blocks of content on a webpage, and contain structural elements. It 
 
 - How do inline elements affect the document flow?
 
-it occupies the space between the tags that define the element
+it would not effect the flow of the document, it would print on the same line
 
 - What are the default width and height of a block-level element?
 
-occupies the full width of the webpage
+occupies the full width of the webpage, height of its content
 
 - What are the default width and height of an inline element?
 
-only occupies the space inside the element
+width and height will be determined by its content
 
 ## Notes
 
