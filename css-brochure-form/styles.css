@@ -1,16 +1,18 @@
+.container {
+  margin: 0 auto;
+}
+
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   color: #ec5d57;
   font-size: 15px;
-  width: 100px;
-  margin: 0 auto;
   padding-top: 10px;
+  text-align: center;
 }
 
 div {
   width: 300px;
-  margin: 0 auto;
   padding-bottom: 2px;
 }
 
