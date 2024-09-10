@@ -40,7 +40,7 @@ The event target is referring to the element that is responsible for firing the 
   element.addEventListener('click', handleClick());
   ```
 
-The first snippit, the second argument being passed is referencing a function handleClick that already exists, and the second snippet the second argument is creating a callback function within the addEventListener method.
+The first snippit, the second argument being passed is referencing a function handleClick that already exists, and the second snippet the second argument is calling a function within the addEventListener method.
 
 ## Notes
 
