@@ -6,10 +6,10 @@ document.addEventListener('keydown', (event) => {
   if ($span[x].textContent === event.key && x <= $span.length) {
     console.log('yes');
     $span[x].className = 'span span-green';
+    x++;
   } else {
     console.log('no');
     $span[x].className = 'span span-red';
   }
   console.log(event);
-  x++;
 });
