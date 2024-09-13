@@ -17,9 +17,9 @@ $tabContainer?.addEventListener('click', (event: Event) => {
   const dataView = $eventTarget.getAttribute('data-view');
   for (let x = 0; x < $viewElements.length; x++) {
     if ($viewElements[x].getAttribute('data-view') === dataView) {
-      $viewElements[x].className = 'view view-container';
+      $viewElements[x].className = 'view';
     } else {
-      $viewElements[x].className = 'view view-container hidden';
+      $viewElements[x].className = 'view hidden';
     }
   }
 });
