@@ -10,12 +10,8 @@ div {
   align-items: center;
 }
 
-.border {
-  border: none;
-}
-
 .border-selected {
-  border-bottom: 1em;
+  border-bottom: 2px solid black;
   color: black;
 }
 
