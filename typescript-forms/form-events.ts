@@ -1,9 +1,3 @@
-interface FormElements extends HTMLFormControlsCollection {
-  name: HTMLInputElement;
-  email: HTMLInputElement;
-  message: HTMLTextAreaElement;
-}
-
 // handle focus
 
 function handleFocus(event: Event): void {
@@ -35,34 +29,23 @@ const $focus = document.querySelector('input');
 if (!$focus) throw new Error('$form does not exist');
 
 $focus.addEventListener('focus', handleFocus);
+$focus.addEventListener('blur', handleBlur);
+$focus.addEventListener('focus', handleInput);
 
 const $blur = document.querySelector('input');
 
 if (!$blur) throw new Error('$blur does not exist');
 
-$focus.addEventListener('blur', handleBlur);
+$blur.addEventListener('focus', handleFocus);
+$blur.addEventListener('blur', handleBlur);
+$blur.addEventListener('focus', handleInput);
 
 const $input = document.querySelector('textarea');
 
 if (!$input) throw new Error('$input does not exist');
 
+$input.addEventListener('focus', handleFocus);
+$input.addEventListener('blur', handleBlur);
 $input.addEventListener('focus', handleInput);
 
 // querying the DOM for the contact form
-
-const $contactForm = document.querySelector('#contact-form') as HTMLFormElement;
-
-$contactForm.addEventListener('submit', (event: Event) => {
-  event.preventDefault();
-  const $formElements = $contactForm.elements as FormElements;
-
-  const formData = {
-    name: $formElements.name.value,
-    email: $formElements.email.value,
-    message: $formElements.message.value,
-  };
-
-  console.log(formData);
-
-  $contactForm.reset();
-});
