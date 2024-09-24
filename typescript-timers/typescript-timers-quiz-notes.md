@@ -22,6 +22,8 @@ it is 0 milliseconds
 
 - What do `setTimeout()` and `setInterval()` return?
 
+it returns an intervalID, and can be removed by using clearInterval();
+
 ## Notes
 
 All student notes should be written here.
