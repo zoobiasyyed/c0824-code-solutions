@@ -47,22 +47,21 @@ function nodeListBackwards() {
     }
   }
 }
-let pokemonInterval = setInterval(forNodeLists, 2000);
+let pokemonInterval = setInterval(forNodeLists, 3000);
 // adding event listener for the right arrow
 $rightArrow.addEventListener('click', () => {
   clearInterval(pokemonInterval);
-  forNodeLists();
-  pokemonInterval = setInterval(forNodeLists, 2000);
+  pokemonInterval = setInterval(forNodeLists, 3000);
 });
 // doing the same for the left arrow
 $leftArrow.addEventListener('click', () => {
   clearInterval(pokemonInterval);
   nodeListBackwards();
-  pokemonInterval = setInterval(forNodeLists, 2000);
+  pokemonInterval = setInterval(forNodeLists, 3000);
 });
 function dotHandler(event) {
   clearInterval(pokemonInterval);
-  pokemonInterval = setInterval(forNodeLists, 2000);
+  pokemonInterval = setInterval(forNodeLists, 3000);
   currentIndex = Number.parseInt(event?.target?.id);
   for (let i = 0; i < $buttonNavBar.length; i++) {
     if (i === currentIndex) {
