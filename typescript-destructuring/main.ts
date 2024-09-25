@@ -70,22 +70,14 @@ const [book3, book4, book5] = library;
 
 // const { firstName, lastName } = person;
 
-const { title: title3, author: author3, libraryId: libraryId3 } = book3;
-
 console.log(book3);
 
-const { title: title4, author: author4, libraryId: libraryId4 } = book4;
-
 console.log(book4);
-
-const { title: title5, author: author5, libraryId: libraryId5 } = book5;
 
 console.log(book5);
 
 // destructure last object
 
 const [, , , book6] = library;
-
-const { title: title6, author: author6, libraryId: libraryId6 } = book6;
 
 console.log(book6);
