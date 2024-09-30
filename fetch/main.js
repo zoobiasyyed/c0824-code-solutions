@@ -16,7 +16,7 @@ async function fetchData() {
 fetchData();
 async function getPokemon() {
   try {
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon/23', {
+    const response = await fetch('https://pokeapi.co/api/v2/pokemon-species/', {
       method: 'GET',
     });
     if (!response.ok) {
