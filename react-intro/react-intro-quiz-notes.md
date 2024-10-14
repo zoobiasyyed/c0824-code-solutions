@@ -15,6 +15,7 @@ a self contained collection of HTML, CSS, and JS that provide all the functional
 - How do you mount a React app (root component) to the DOM?
 
 So a root component is a high level element that is the parent of all other components in the application, and we will call it the default function
+Use the createRoot method
 
 - What are some other popular frontend frameworks?
 
