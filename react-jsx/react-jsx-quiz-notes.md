@@ -6,7 +6,11 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is JSX?
 
+similar to html, its used in react to write the code to dom elements and creations, and helps with reusability.
+
 - How does React use JSX to render components?
+
+you can return JSX markup, and use that to constructs the Dom created to display on the browser
 
 ## Notes
 
