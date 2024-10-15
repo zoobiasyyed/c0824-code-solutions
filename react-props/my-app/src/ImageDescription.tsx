@@ -1,8 +1,8 @@
-type Prop = {
+type Props = {
   text: string;
 };
 
-export function ImageDescription(prop: Prop) {
+export function ImageDescription(prop: Props) {
   return (
     <div>
       <p>{prop.text}</p>
