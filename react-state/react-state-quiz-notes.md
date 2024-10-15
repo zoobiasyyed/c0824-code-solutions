@@ -10,6 +10,9 @@ Hooks are functions that are used for controlling states in React, allowing comp
 
 - What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
 
+start witht he phase user and has to have a capital letter
+can be called from a component or hook
+must be called in the same order
 You must call them at the top level in the body of a function component. They CAN NOT be used inside loops or conitionals, event handlers, try/catch blocks, etc.
 
 - What is the purpose of state in React?
