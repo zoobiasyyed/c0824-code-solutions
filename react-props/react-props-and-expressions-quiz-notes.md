@@ -6,15 +6,17 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What are props in React?
 
-they are objects that pass arguments to react components
+they are objects that pass arguments to react components. can pass anything, suppsed to look
 
 - How do you declare and access props in a component?
 
 pass it inside a curly bracket inside a components
+declare a single parameter in the function, and use destructuring to get access to that parameter
 
 - How do you pass props to a component?
 
-you would declare it as a parameter, and then pass it inside a curly bracket inside a components
+like an html attribute, with the name u want it to be and make it equal to the prop.
+ex text = {prop}
 
 - How do you write JavaScript expressions in JSX?
 
