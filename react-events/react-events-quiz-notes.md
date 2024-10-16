@@ -10,7 +10,7 @@ it is an object that represents an interaction taken by then user, and can trigg
 
 - What is an "event handler"? Which component declares the handler?
 
-The event handler is a function that is triggered in response to interactions, and is define
+The event handler is a function that is triggered in response to interactions, and is declared by the parent component.
 
 - How do you pass an event handler to a React component?
 
