@@ -28,7 +28,7 @@ export function HotButton({ label }: Props) {
       <button onClick={() => setIndex(index + 1)} className={className}>
         {label}
       </button>
-      <p>Number of Clicks: {[index]}</p>
+      <p>Number of Clicks: {index}</p>
     </>
   );
 }
