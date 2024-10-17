@@ -4,6 +4,8 @@ import { useState, FormEvent } from 'react';
 export function RegistrationFormControlled() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  //if undefined:
+  //const [password, setPassword] = useState<string>();
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -18,16 +20,14 @@ export function RegistrationFormControlled() {
           <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            type="text"
-            name="username"></input>
+            type="text"></input>
         </label>
         <label>
           Password:
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            name="password"></input>
+            type="password"></input>
         </label>
         <button id="button" type="submit">
           Submit

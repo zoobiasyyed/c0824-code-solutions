@@ -5,7 +5,7 @@ export function RegistrationFormUncontrolled() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const form = event?.currentTarget as HTMLFormElement;
+    const form = event.currentTarget;
     const formData = new FormData(form);
 
     const objForm = Object.fromEntries(formData);
