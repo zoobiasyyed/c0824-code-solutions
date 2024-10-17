@@ -3,7 +3,12 @@ import { RegistrationFormUncontrolled } from './RegistrationFormUncontrolled';
 import { RegistrationFormControlled } from './RegistrationFormControlled';
 
 function App() {
-  return <RegistrationFormControlled />;
+  return (
+    <>
+      <RegistrationFormControlled />
+      <RegistrationFormUncontrolled />
+    </>
+  );
 }
 
 export default App;
