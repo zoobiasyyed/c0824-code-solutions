@@ -31,7 +31,7 @@ export function ValidatedInput() {
           {reactIcons}
         </div>
       </label>
-      <div className="message">{message}</div>
+      <div className="message">{message}&nbsp;</div>
     </div>
   );
 }
