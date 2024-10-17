@@ -8,7 +8,7 @@ export function RegistrationFormUncontrolled() {
     const form = event?.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
 
-    const objForm = Object.fromEntries(formData.entries());
+    const objForm = Object.fromEntries(formData);
 
     console.log(objForm);
   };
