@@ -1,20 +1,21 @@
 type Prop = {
   count: number;
+  onClick: (index: number) => void;
+  current: number;
 };
 
-export function Indicators({ count }: Prop) {
+export function Indicators({ count, current, onClick }: Prop) {
   const buttons = [];
   for (let i = 0; i < count; i++) {
-    buttons.push(<button>Label</button>);
+    buttons.push(
+      <button
+        style={{ backgroundColor: i === current ? 'blue' : 'black' }}
+        onClick={() => {
+          onClick(i);
+        }}>
+        {i}
+      </button>
+    );
   }
-  return (
-    <>
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-    </>
-  );
+  return <>{buttons}</>;
 }
