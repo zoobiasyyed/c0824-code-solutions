@@ -1,8 +1,12 @@
-export function Indicators() {
-  // const buttons = [];
-  // for (let i = 0; i < count; i++) {
-  //   buttons.push(<button>Label</button>);
-  // }
+type Prop = {
+  count: number;
+};
+
+export function Indicators({ count }: Prop) {
+  const buttons = [];
+  for (let i = 0; i < count; i++) {
+    buttons.push(<button>Label</button>);
+  }
   return (
     <>
       <button type="button">1</button>

@@ -1,5 +1,5 @@
 //import { useState } from 'react'
-import { RotatingBanner } from './RotatingBanner';
+import RotatingBanner from './RotatingBanner';
 import './App.css';
 
 const items = [
@@ -11,12 +11,8 @@ const items = [
   'Ferret',
 ];
 
-// type Prop = {
-//   items: string[];
-// };
-
 function App() {
-  return <RotatingBanner />;
+  return <RotatingBanner items={items} />;
 }
 
 export default App;
