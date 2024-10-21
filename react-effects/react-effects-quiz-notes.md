@@ -32,6 +32,8 @@ in other words, it delays a piece of code from running until that render is refl
 by default, Effect runs after every render, which is not what you want.
 you can tell React to skip unnecessary re-renderings of the Effect, by specifying an array of dependencies,
 
+anything that is declared outside your useEffect
+
 ex: useEffect(() => {
 // ...
 }, []);
@@ -44,6 +46,7 @@ React will only skip re-running the Effect if all of the dependencies you specif
 - Why would you want to clean up from an Effect?
 
 a cleanup function might be necessary to stop ur effect from mounting more than once.
+use effect is interacting w operating system by allocating timer, in your clean up, ur getting rid of the memory
 
 - How do you clean up from an Effect?
 
