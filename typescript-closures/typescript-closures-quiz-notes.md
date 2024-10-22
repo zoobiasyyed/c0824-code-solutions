@@ -7,6 +7,7 @@ Answer the following questions in the provided markdown file before turning in t
 - In JavaScript, when is scope determined?
 
 scope is determined at the time the code is written, based on where variables and functions are declared
+lexical scope, checked by just reading the code
 
 - What allows JavaScript functions to "remember" variables from their surroundings?
 
@@ -19,6 +20,8 @@ contained the function along with variables from the outer scope
 - When is a closure created?
 
 it is created when a function is defined inside another function and references variables from the outer functions scope
+
+the closure gets created when javascript executes the function declaration.
 
 - How can you tell if a function will be created with a closure?
 
