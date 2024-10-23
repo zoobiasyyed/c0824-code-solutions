@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { type Product, readProduct } from './lib/';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 
 export function ProductDetails() {
   const { productId } = useParams();
   const [product, setProducts] = useState<Product | undefined>();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<unknown>();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function loadProductDetails(productId: number) {
@@ -39,6 +41,11 @@ export function ProductDetails() {
   }
   const { imageUrl, name, price, shortDescription, longDescription } = product;
 
+  const handleNav = () => {
+    alert(`Added ${name} to cart`);
+    navigate('/');
+  };
+
   return (
     <div className="container">
       <div className="flex flex-col">
@@ -62,6 +69,7 @@ export function ProductDetails() {
             <p className="pd-text">{longDescription}</p>
           </div>
         </div>
+        <button onClick={handleNav}>Save</button>
       </div>
     </div>
   );

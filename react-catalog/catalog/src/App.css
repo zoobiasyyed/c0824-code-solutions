@@ -77,6 +77,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: white;
 }
 
 h1 {
@@ -91,7 +92,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -148,4 +148,14 @@ button:focus-visible {
   padding-left: 1rem; /* Equivalent to 'px-4' (padding left and right of 1rem) */
   padding-right: 1rem;
   font-weight: bold;
+}
+
+.about-style {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-txt {
+  color: black;
 }
