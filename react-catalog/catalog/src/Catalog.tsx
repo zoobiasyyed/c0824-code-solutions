@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { type Product, readCatalog } from './lib/';
+import { type Product, readCatalog, toDollars } from './lib/';
 import { Link } from 'react-router-dom';
+// import { toDollars } from './lib/';
 
 export function Catalog() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -57,7 +58,7 @@ function ItemCard({ product }: CardProps) {
       <div className="itemCard">
         <img className="product-image" src={product.imageUrl}></img>
         <h5 className="">{product.name}</h5>
-        <h6>{product.price}</h6>
+        <h6>{toDollars(product.price)}</h6>
         <h6>{product.shortDescription}</h6>
       </div>
     </Link>

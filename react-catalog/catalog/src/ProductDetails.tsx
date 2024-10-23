@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { type Product, readProduct } from './lib/';
+import { type Product, readProduct, toDollars } from './lib/';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 
 export function ProductDetails() {
@@ -34,7 +34,7 @@ export function ProductDetails() {
   if (error || !product) {
     return (
       <div>
-        Error Loading Item {productId}:{' '}
+        Error Loading Item {productId}
         {error instanceof Error ? error.message : 'Unknown Error'}
       </div>
     );
@@ -65,11 +65,11 @@ export function ProductDetails() {
           </div>
           <div className="px-4">
             <p className="pd-text">{shortDescription}</p>
-            <p className="pd-text">{price}</p>
+            <p className="pd-text">{toDollars(price)}</p>
             <p className="pd-text">{longDescription}</p>
           </div>
         </div>
-        <button onClick={handleNav}>Save</button>
+        <button onClick={handleNav}>Add To Cart</button>
       </div>
     </div>
   );
