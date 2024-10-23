@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 export function App() {
   return (
     <Routes>
-      {/* This path '/' is the root path of the application.
+      {/* The path '/' is the root path of the application.
         element will define the component for this root */}
       {/* the LINK tags will basically be like ur anchor or
         href elements */}
