@@ -18,6 +18,8 @@ export function Header() {
         </ul>
       </nav>
       {<Outlet />}
+      {/* outlet will display whatever component, but always have the header there. the outlet will show up underneath the header
+      it will display wherever outlet is. */}
     </div>
   );
 }

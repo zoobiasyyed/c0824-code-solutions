@@ -22,6 +22,9 @@ export function Details() {
     if (itemId) {
       setIsLoading(true);
       loadItem(+itemId);
+      {
+        /*even tho itemId is stored as a string, it is parsed as a number to be used later */
+      }
     }
   }, [itemId]);
 

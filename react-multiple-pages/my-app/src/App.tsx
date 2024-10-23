@@ -13,7 +13,9 @@ export function App() {
       {/* the LINK tags will basically be like ur anchor or
         href elements */}
       <Route path="/" element={<Header />}>
+        {/* wrap the header element around the rest of the components */}
         <Route index element={<Dashboard />} />
+        {/* index is the default path u want the url to take if nothing matches */}
         <Route path="details/:itemId" element={<Details />} />
         {/* the /: defines a custom parameter which is dynamic and
           able to be changed. anything that comes after the slash
@@ -24,6 +26,7 @@ export function App() {
         <Route path="about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Route>
+      {/* <Route path="*" element={<NotFound />} /> */}
     </Routes>
   );
 }
