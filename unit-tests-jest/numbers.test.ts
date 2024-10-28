@@ -36,9 +36,9 @@ describe('divideBy', () => {
 // multiply by
 describe('multiplyBy', () => {
   it('modifies object by multiplying value of each key if its a number', () => {
-    const obj = { age: 23, height: 7 };
+    const obj = { age: 23, height: 7, name: 'Zoobia' };
     const multiplier = 2;
     const result = multiplyBy(obj, multiplier);
-    expect(result).toEqual({ age: 46, height: 14 });
+    expect(result).toEqual({ age: 46, height: 14, name: 'Zoobia' });
   });
 });
