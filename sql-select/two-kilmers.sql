@@ -1,4 +1,4 @@
 SELECT "actorId", "firstName", "lastName"
 FROM "actors"
-WHERE "lastName" = 'kilmer'
+WHERE "lastName" = 'Kilmer'
 LIMIT 2;
