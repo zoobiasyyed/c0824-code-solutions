@@ -18,16 +18,24 @@ A GET request
 
 - What is on the first line of an HTTP **request** message?
 
-The start line describes the request to be implemented it the first line. it has a status of whether it succeeded or failed.
+on the first line is the HTTP Method, which is a verb or a noun, that describes the action to be performed.
+following that is a request target, usually a URL, and the http version
 
 - What is on the first line of an HTTP **response** message?
 
-on the first line is the HTTP Method, which is a verb or a noun, that describes the action to be performed.
-following that is a request target, usually a URL
+The start line describes the request to be implemented it the first line. it has a status of whether it succeeded or failed.
+
+version number first
+
+version, status code, status text
 
 - What are HTTP headers?
 
 They describe the body included in the message with is the data associated with the requests
+
+name value pairs
+
+info about the request so u understand the request
 
 - Is a body required for a valid HTTP message?
 
