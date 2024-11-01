@@ -1,0 +1,22 @@
+.carousel-style {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: white;
+}
+
+.arrow {
+  color: black;
+  padding: 20px;
+}
+
+.dots {
+  padding-top: 20px;
+  color: black;
+}
+
+.images {
+  width: 200px;
+}
