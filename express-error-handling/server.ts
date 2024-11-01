@@ -14,8 +14,6 @@ app.get('/api/notes', async (req, res, next) => {
     res.send(notes);
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -33,8 +31,6 @@ app.post('/api/notes', async (req, res, next) => {
     res.send(note);
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -56,8 +52,6 @@ app.put('/api/notes', async (req, res, next) => {
     res.send(note);
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
   }
 });
 
@@ -71,8 +65,6 @@ app.delete('/api/notes', async (req, res, next) => {
     res.send(`deleted ${id}`);
   } catch (err) {
     next(err);
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
   }
 });
 
