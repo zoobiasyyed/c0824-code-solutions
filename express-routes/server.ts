@@ -2,10 +2,10 @@ import express from 'express';
 
 const app = express();
 
-// app.use((req, res, next) => {
-//   console.log('The date is', new Date(), req.method, req.path);
-//   next();
-// });
+app.use((req, res, next) => {
+  console.log('The date is', new Date(), req.method, req.path);
+  next();
+});
 
 app.get('/', (req, res) => {
   res.send('number 1');
