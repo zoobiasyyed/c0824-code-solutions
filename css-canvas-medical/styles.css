@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  font-family: Avenir, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.canvas-logo {
+  width: 200px;
+  font-family: 'Tiempos Headline', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* width: 700px; */
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+.canvas-logo2 {
+  width: 180px;
+  font-family: 'Tiempos Headline', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* width: 700px; */
+  padding-left: 80px;
+  padding-top: 65px;
+  padding-bottom: 20px;
+}
+
+.background-color-grey {
+  background-color: #fafafa;
+}
+
+.col-third {
+  color: #6e6e6e;
+  font-family: 'Tiempos Headline', sans-serif;
+  display: flex;
+  flex-basis: calc(100% / 3);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.col-thirds {
+  font-family: 'Tiempos Headline', sans-serif;
+  color: #6e6e6e;
+  display: flex;
+  justify-content: center;
+}
+
+.clinician-location {
+  display: flex;
+  justify-content: center;
+}
+
+.p {
+  padding-bottom: 30px;
+}
+
+.h2 {
+  height: 7px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-family: 'Tiempos Headline', sans-serif;
+  padding-top: 15px;
+  width: 800px;
+  height: 450px;
+  background-position: center center;
+  background-size: 800px;
+  background-image: url('images/hero.jpg');
+  color: white;
+  padding-left: 50px;
+  padding-right: 500px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.col-fifths {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: calc(100% / 5);
+  margin: 0;
+  justify-content: center;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  flex-basis: calc(100% / 4);
+  color: #aaa;
+  font-size: small;
+}
+
+.column-half {
+  font-family: 'Tiempos Headline', sans-serif;
+  flex-basis: 50%;
+  height: 100px;
+  width: 700px;
+}
+
+.column-half-grey {
+  font-weight: 40;
+  color: #6e6e6e;
+  font-family: 'Tiempos Headline', sans-serif;
+  flex-basis: 50%;
+  height: 100px;
+  width: 700px;
+  padding-bottom: 150px;
+}
+
+.border {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #aaa;
+  border-width: 1px;
+}
+
+#buttons {
+  background-color: #0a4265;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button {
+  background-color: #0a4265;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero {
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+}
+
+#company {
+  padding-top: 50px;
+  font-size: 15px;
+}
+
+#canvas {
+  padding-left: 80px;
+  padding-top: 30px;
+  color: white;
+}
+
+#product-links {
+  padding-top: 50px;
+  font-size: 15px;
+}
+
+.col-fourths {
+  flex-basis: 25%;
+  background-color: #525351;
+  height: 300px;
+  color: white;
+}
+
+.company-product-text {
+  font-size: 12px;
+}
+
+.address-text {
+  padding-left: 80px;
+}
+
+.background-color {
+  background-color: #fafafa;
+}
+
+.last-row {
+  color: #6f6f6f;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
