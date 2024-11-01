@@ -65,9 +65,10 @@ app.put('/api/film', async (req, res, next) => {
       throw new ClientError(400, 'title is required');
     }
     const sql = `
-      update "film"
+      update "films"
       set "title" = $2
       where "filmId" = $1;
+      returning *;
     `;
     const params = [filmId, title];
     const result = await db.query(sql, params);
