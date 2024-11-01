@@ -7,8 +7,11 @@ Answer the following questions in the provided markdown file before turning in t
 - What is Express useful for?
 
 its a flexible node.js web application framework that provides a set of features for web and mobile applications
+handles all http communications, can listen to all http requests and then take the response and send it back out.
 
 - How does Express fit into a full-stack web application?
+
+in the server
 
 Express acts as the backend framework that handles routing, middleware, and HTTP requests/responses in a full-stack web application.
 
