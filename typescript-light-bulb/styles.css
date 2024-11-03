@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+}
+
+.dark-background {
+  background-color: #111;
+  border: none;
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  border-radius: 90px;
+  border: none;
+  background-color: #fae985;
+}
+
+.button.dark {
+  background-color: #252525;
+}
+
+.light-background {
+  background-color: #fef9f1;
+  border: none;
+}
