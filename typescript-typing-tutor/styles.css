@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-selected {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+span {
+  font-size: larger;
+}
+
+.span-red {
+  color: red;
+}
+
+.span-green {
+  color: green;
+}
