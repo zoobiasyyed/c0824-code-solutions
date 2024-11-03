@@ -1,0 +1,21 @@
+.row {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left,
+#right {
+  display: flex;
+  justify-content: center;
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+.hidden {
+  display: none;
+}
