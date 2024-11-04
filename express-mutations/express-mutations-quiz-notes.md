@@ -16,6 +16,9 @@ It indicates the result of the client's request, such as 200 for success or 404 
 
 This is a built-in middleware function in Express. It parses incoming requests with JSON information. it allows us to handle json data in express
 
+it looks at the headers, looking for application/json, need it to be that
+then it grabs the body from the request, calls json.parse, gets an obj, and assigns it to req.body
+
 ## Notes
 
 All student notes should be written here.
