@@ -31,6 +31,8 @@ app.get('/api/films', async (req, res, next) => {
 app.get('/api/films/:filmId', async (req, res, next) => {
   try {
     const { filmId } = req.params;
+    if (!Number.isInteger(+filmId))
+      throw new ClientError(400, 'filmid is not an integer');
     if (filmId === undefined) {
       throw new ClientError(400, 'filmId is required');
     }
