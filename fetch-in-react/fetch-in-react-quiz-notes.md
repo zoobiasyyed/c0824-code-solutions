@@ -10,7 +10,9 @@ fetch() can be used to make HTTP requests to a server in React.
 
 - What two things need to be done to properly handle HTTP request errors? Why?
 
-Check for the HTTP response status and use a catch block to handle network errors to ensure errors are properly detected and handled.
+Check for the HTTP response status(response.ok will be true if its in the 200 range) and use a try catch block to handle network errors to ensure errors are properly detected and handled.
+
+ALWAYS CHECK RESPONSE.OK!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - How can `useEffect` be used to load data for a component?
 
