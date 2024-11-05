@@ -18,6 +18,27 @@ export function Users() {
   const [users, setUsers] = useState<User[]>([]);
   const [user, setUser] = useState<User>();
 
+  useEffect(() => {
+    async function fetchUsers() {
+      try {
+        const response = await fetch(
+          'https://jsonplaceholder.typicode.com/users'
+        );
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = (await response.json()) as User[];
+        setUsers(data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchUsers();
+  }, []);
+
   if (isLoading) {
     return <p>Loading...</p>;
   }
