@@ -1,0 +1,21 @@
+.h2-style {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  color: black;
+  background-color: rgb(156, 155, 155);
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.p-style {
+  width: 500px;
+  background-color: gray;
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}

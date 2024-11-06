@@ -1,0 +1,29 @@
+.cold {
+  color: white;
+  background-color: #341c75;
+}
+
+.cool {
+  color: white;
+  background-color: #674ea7;
+}
+
+.tepid {
+  color: white;
+  background-color: #e06666;
+}
+
+.warm {
+  color: black;
+  background-color: #f6b26b;
+}
+
+.hot {
+  color: black;
+  background-color: #ff0;
+}
+
+.nuclear {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
