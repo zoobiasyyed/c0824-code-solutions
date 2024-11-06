@@ -7,7 +7,7 @@ Answer the following questions in the provided markdown file before turning in t
 - How do controlled components differ from uncontrolled components?
 
 With controlled components, the controlled form sets each input value in the state, and sets the value of each input on each rerender. Every update on the state will be reflected on other input values.
-Uncontrolled does not save the input values in the react state, but instead uses the form function in HTML. state is not used at all actually in this.
+Uncontrolled does not save the input values in the react state, but instead uses the form function in HTML. state is not used at all actually in this
 
 - What are some advantages of using uncontrolled components?
 
