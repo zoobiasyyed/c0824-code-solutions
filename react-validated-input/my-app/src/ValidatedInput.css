@@ -1,0 +1,19 @@
+.style {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+#password {
+  margin: 10px;
+}
+
+.message {
+  font-size: small;
+  padding-top: 10px;
+  color: red;
+}
