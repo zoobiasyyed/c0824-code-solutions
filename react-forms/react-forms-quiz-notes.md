@@ -12,6 +12,7 @@ Uncontrolled does not save the input values in the react state, but instead uses
 - What are some advantages of using uncontrolled components?
 
 there is much less boilerplate, especially with more complex forms. and when frequent rerenders are unnecessary
+idk
 
 - What are some advantages of using controlled components?
 
