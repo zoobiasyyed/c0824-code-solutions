@@ -39,7 +39,7 @@ app.post('/api/auth/sign-up', async (req, res, next) => {
     const sql = `
     insert into "users" ("username", "hashedPassword")
     values ($1, $2)
-    returning *`;
+    returning "userId", "username"`;
     const params = [username, hashedPassword];
     const result = await db.query(sql, params);
     const users = result.rows[0];
@@ -66,7 +66,7 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     }
 
     const sql = `
-    Select "userId", "hashedPassword"
+    Select "userId", "hashedPassword", "username"
     From "users"
     Where "username" = $1`;
     const params = [username];
@@ -76,7 +76,17 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     if (!user) throw new ClientError(400, 'invalid login');
 
     const match = await argon2.verify(user.hashedPassword, password);
-    res.status(201).json(user);
+
+    if (!match) throw new ClientError(401, 'Invalid Login');
+
+    const payload = {
+      userId: user.userId,
+      username: user.username,
+    };
+
+    const token = jwt.sign(payload, hashKey);
+
+    res.status(200).json({ user: payload, token });
     /* TODO:
      * Delete the "Not implemented" error.
      * Query the database to find the "userId" and "hashedPassword" for the "username".
@@ -98,7 +108,7 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
   }
 });
 
-app.get('/api/todos', async (req, res, next) => {
+app.get('/api/todos', authMiddleware, async (req, res, next) => {
   try {
     const sql = `
       select *
@@ -113,7 +123,7 @@ app.get('/api/todos', async (req, res, next) => {
   }
 });
 
-app.post('/api/todos', async (req, res, next) => {
+app.post('/api/todos', authMiddleware, async (req, res, next) => {
   try {
     const { task, isCompleted = false } = req.body;
     if (!task || typeof isCompleted !== 'boolean') {
@@ -133,7 +143,7 @@ app.post('/api/todos', async (req, res, next) => {
   }
 });
 
-app.put('/api/todos/:todoId', async (req, res, next) => {
+app.put('/api/todos/:todoId', authMiddleware, async (req, res, next) => {
   try {
     const todoId = Number(req.params.todoId);
     if (!Number.isInteger(todoId) || todoId < 1) {

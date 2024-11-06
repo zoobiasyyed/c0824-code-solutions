@@ -12,6 +12,14 @@ export function authMiddleware(
   next: NextFunction
 ): void {
   /* your code here */
+  const auth = req.get('Authorization');
+  if (!auth) throw new ClientError(401, 'authentication required');
+  const token = auth?.split('Bearer ')[1];
+  if (!token) throw new Error('token is undefined');
+
+  const payload = jwt.verify(token, hashKey);
+  req.user = payload as Request['user'];
+  next();
 }
 
 /*
