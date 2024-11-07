@@ -66,6 +66,7 @@ export async function updateTodo(todo: Todo): Promise<Todo> {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
+      Authorization: `Bearer ${readToken()}`,
     },
     body: JSON.stringify(todo),
   };
@@ -77,6 +78,7 @@ export async function updateTodo(todo: Todo): Promise<Todo> {
 export async function removeTodo(todoId: number): Promise<void> {
   const req = {
     method: 'DELETE',
+    Authorization: `Bearer ${readToken()}`,
   };
   const res = await fetch(`/api/todos/${todoId}`, req);
   if (!res.ok) throw new Error(`fetch Error ${res.status}`);
